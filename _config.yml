@@ -1,6 +1,6 @@
 # Site settings
 title: Dylan Losey
-email:
+email: dlosey@stanford.edu
 author: Dylan Losey
 description: "Dylan Losey"
 baseurl: ""
@@ -10,6 +10,13 @@ header_pages:
  - collab.html
  - publications.html
  - talks.html
+ - CV.html
+ - contact.html
+
+show_social_icons: false
+github_username: dylan-losey
+twitter_username:
+linkedin_username:
 
 # Build settings
 markdown: kramdown
