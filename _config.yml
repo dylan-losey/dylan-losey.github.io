@@ -4,7 +4,7 @@ email: dlosey@stanford.edu
 author: Dylan Losey
 description: "Dylan Losey"
 baseurl: ""
-url: "http://dylanlosey.com/"
+url: ""
 date_format: "%b %-d, %Y"
 header_pages:
  - collab.html
