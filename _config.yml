@@ -1,10 +1,10 @@
 # Site settings
 title: Dylan Losey
-email: dlosey@stanford.edu
+email:
 author: Dylan Losey
 description: "Dylan Losey"
 baseurl: ""
-url: ""
+url: "http://dylanlosey.com/"
 date_format: "%b %-d, %Y"
 header_pages:
  - collab.html
