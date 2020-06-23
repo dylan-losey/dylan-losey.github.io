@@ -13,9 +13,9 @@ header_pages:
  - CV.html
  - contact.html
 
-show_social_icons: false
-github_username: dylan-losey
-twitter_username:
+show_social_icons: true
+github_username:
+twitter_username: loseydp
 linkedin_username:
 
 # Build settings
