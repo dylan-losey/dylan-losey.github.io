@@ -1,6 +1,5 @@
 # Site settings
 title: Dylan Losey
-email: losey@vt.edu
 author: Dylan Losey
 description: "Dylan Losey"
 baseurl: ""
@@ -14,6 +13,7 @@ header_pages:
  - contact.html
 
 show_social_icons: true
+email: losey@vt.edu
 github_username:
 twitter_username: loseydp
 linkedin_username:
