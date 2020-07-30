@@ -504,14 +504,14 @@ blockquote footer { background-color: #fff; border-color: transparent; color: #7
   .social-icons-right { text-align: right; } }
 @media screen and (min-width: 48em) { html { font-size: 18px; } }
 @media screen and (min-width: 64em) { html { font-size: 20px; } }
-@media screen and (min-width: 78em) { em img { max-width: 56rem; margin-left: -7em; } }
+@media screen and (min-width: 78em) { em img { max-width: 54rem; margin-left: -7em; } }
 .gist, .gist .highlight .p { font-size: .75rem; }
 
 .gist .lines { width: 100%; }
 
 .gist table > tbody > tr > td { border-top: 0px; }
 
-.measure { margin: 0 auto; max-width: 42rem; }
+.measure { margin: 0 auto; max-width: 40rem; }
 
 .pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; }
 
