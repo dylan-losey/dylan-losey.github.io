@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ME 4524 - Robotics & Automation &#8211; Dylan Losey</title>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dylan Losey">
+    <link rel="manifest" type="application/manifest+json; charset=utf-8" href="/manifest.json" />
+    <meta name="robots" content="all">
+    <meta name="author" content="Dylan Losey">
+    
+    
+    <link rel="canonical" href="http://localhost:4000/me4524/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Dylan Losey" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?202012122206" type="text/css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/css/fonts/texgyrepagella.css" type="text/css" />
+    
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <!-- MathJax -->
+    
+
+    <!-- Verifications -->
+    
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ME 4524 - Robotics &amp; Automation">
+    <meta property="og:description" content="Dylan Losey">
+    <meta property="og:url" content="http://localhost:4000/me4524/">
+    <meta property="og:site_name" content="Dylan Losey">
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@loseydp" />
+        <meta name="twitter:creator" content="@loseydp" />
+    
+    <meta name="twitter:title" content="ME 4524 - Robotics & Automation" />
+    <meta name="twitter:description" content="Dylan Losey" />
+    <meta name="twitter:url" content="http://localhost:4000/me4524/" />
+    
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    
+</head>
+
+<body class="site">
+
+  <div class="site-wrap">
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <header class="post-header">
+          
+            <h1 class="h2">ME 4524 - Robotics & Automation</h1>
+          
+        </header>
+        <article class="post-content">
+          <style>
+  .link {
+  color: #FF9900;
+  text-decoration: none;
+  }
+  .link:hover {
+      color: black;
+      text-decoration: none;
+  }
+  hr {
+      border: none;
+      height: 1px;
+      color: #333;
+      background-color: #333;
+      margin: -5px;
+  }
+  table {
+    border-top: 0px solid #333;
+  }
+  td, th {
+    text-align: left;
+  }
+</style>
+
+<div>
+  <p>Virginia Tech, Spring 2021<br />
+  Tuesdays and Thursdays, 3:30-4:45pm<br />
+  Whittemore Hall, Room 300</p>
+</div>
+
+<div>
+  <br>
+<img src=" /images/me4524/front.png" style="width:100%; height:100%; border-radius: 15px">
+</div>
+
+<div>
+  <h3>Description</h3>
+  <p>Robots will change the future of our society.
+  Self-driving cars, assistive prostheses, and surgical robots are already here &mdash; what will be next?
+  This course provides an introduction to modern robotics.
+  You will learn the fundamental methods needed to represent, model, and control robotic systems.
+  These tools will enable you to move forward in both research and industrial applications.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Prerequisites</h3>
+  <p>(ECE 2574, STAT 4714) or (ME 3514, STAT 3704)</p>
+</div>
+
+<hr>
+<div>
+  <h3>Learning Objectives</h3>
+  <p>Imagine that someone gives you a new robot that they have no idea how to use.
+  By the end of this class, you will be able to:
+  (a) model this robot from scratch,
+  (b) solve for a motion plan that safely moves the robot from point A to point B,
+  (c) control the robot's motors and sensors to execute this plan.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Instructor</h3>
+  <table>
+    <tr>
+      <td style="vertical-align:middle; width:25%;">
+		    <center>
+          <img src=" /images/dylan_head.jpg" style="max-height:200px; border-radius: 15px" />
+        </center>
+  	  </td>
+      <td>
+        <p>Prof. Dylan Losey<br />
+        213D Goodwin Hall<br />
+        losey@vt.edu<br />
+        <a class="link" href="https://dylanlosey.com/">Website</a></p>
+  	  </td>
+    </tr>
+  </table>
+</div>
+
+<hr>
+<div>
+  <h3>Textbooks</h3>
+  <ul>
+    <li>(Primary) <i>Modern Robotics</i> by Lynch and Park, 2019. Download <a class="link" href="https://drive.google.com/file/d/1TjYOeJ2PO4z16hSjQkF8PNFojcGU9IYz/view?usp=sharing">here</a>.</li>
+    <li>(Secondary) <i>Robot Modeling and Control</i> by Spong, 2006. Download <a class="link" href="https://drive.google.com/file/d/1lkGRqrfiMyiOY6Ct4ihws7DEymHVjtjC/view?usp=sharing">here</a>.</li>
+  </ul>
+</div>
+
+<hr>
+<div>
+  <h3>Grading</h3>
+  <p>Homework: 40%<br />
+  Midterm: 20%<br />
+  Final: 30%<br />
+  Report: 5%<br />
+  Participation: 5%<br />
+</div>
+
+<hr>
+<div>
+  <h3>Schedule</h3>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Lecture</th>
+      <th>Assignment</th>
+    </tr>
+    <tr>
+      <td>Jan. 19</td>
+      <td>Introduction</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 21</td>
+      <td>What is a Robot?</td>
+      <td>HW1 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 26</td>
+      <td>Rigid-Body Motion</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 28</td>
+      <td>Rigid-Body Motion</td>
+      <td>HW1 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 2</td>
+      <td>Rigid-Body Motion</td>
+      <td>HW2 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 4</td>
+      <td>Forward Kinematics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 9</td>
+      <td>Forward Kinematics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 11</td>
+      <td>Forward Kinematics</td>
+      <td>HW2 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 16</td>
+      <td>Forward Kinematics</td>
+      <td>HW3 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 18</td>
+      <td>Jacobian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 23</td>
+      <td>Jacobian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 25</td>
+      <td><i>Spring Break Day</i></td>
+      <td>HW3 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 2</td>
+      <td>Jacobian</td>
+      <td>HW4 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 4</td>
+      <td>Jacobian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 9</td>
+      <td>Inverse Kinematics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 11</td>
+      <td>Inverse Kinematics</td>
+      <td>HW4 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 16</td>
+      <td><b>Midterm</b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 18</td>
+      <td>Dynamics</td>
+      <td>HW5 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 23</td>
+      <td>Dynamics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 25</td>
+      <td>Dynamics</td>
+      <td>HW5 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 30</td>
+      <td>Dynamics</td>
+      <td>HW6 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 1</td>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 6</td>
+      <td><i>Spring Break Day</i></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 8</td>
+      <td>Control</td>
+      <td>HW 6 + Report Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 13</td>
+      <td>Control</td>
+      <td>HW7 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 15</td>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 20</td>
+      <td>Motion Planning</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 22</td>
+      <td>Motion Planning</td>
+      <td>HW7 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 27</td>
+      <td>Motion Planning</td>
+      <td>HW8 Out</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 29</td>
+      <td>Motion Planning</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>May 4</td>
+      <td>Future Directions</td>
+      <td>HW8 Due</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>May 8</td>
+      <td><b>Final Exam</b></td>
+      <td>7:45-9:45am</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<hr>
+<div>
+  <h3>Homework</h3>
+  <p>There are 8 assigments, each of which is worth 5% of your final grade.
+  Homework is due 6:00pm on Fridays.
+  Late assignments are not accepted, except when the student has an illness or emergency.
+  If you need to ask for an extension due to one of these reasons,
+  this should be done before the homework deadline.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Exams</h3>
+  <p>The class has a midterm and a final exam.
+  The midterm will occur during our regular class time.
+  Both the midterm and the final are closed book;
+  however, you are encouraged to prepare 2 sheets worth of notes (front and back) to reference during the test.
+  Exams will be conducted remotely.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Report</h3>
+  <p>You will write one report that is worth 5% of your final grade.
+  This report should summarize a robotics research article (of your choosing) published in the last 5 years.
+  You can search for an article on google scholar, or explore a research group that is solving a problem which interests you.
+  For example:
+  <a class="link" href="https://collab.me.vt.edu/">Collab</a>,
+  <a class="link" href="https://research.vuse.vanderbilt.edu/MEDLab/research">MEDLab</a>, or 
+  <a class="link" href="https://www.dynsyslab.org/research/">DSL</a>.
+  Your report must be at least 1000 words.
+  Write the report as if you were explaining the research to one of your classmates,
+  and tie in the concepts we are covering in class!
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Participation</h3>
+  <p>Your participation in the class is worth 5% of your final grade.
+  To earn full marks i) attend lecture, ii) ask or answer questions, and
+  iii) come to office hours when you are confused.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Teamwork</h3>
+  <p>Group discussion and collaborative work is encouraged
+  both on the homework and when studying for exams.
+  However, you must submit your own assignment.
+  All assignmented submitted are considered graded work, and are subject to the Honor Code.
+  Students are not allowed to collaborate during the exams.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Office Hours</h3>
+  <p>Office hours will be held on Zoom.
+  All students are invited to attend!
+  You don't need to have a particular question &mdash;
+  you’re welcome to just stop by for 5 minutes and introduce yourself,
+  or talk about a recent lecture.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Services for Students with Disabilities</h3>
+  <p>
+  Every student in this course should have an equal opportunity to succeed.
+  If you anticipate or experience academic barriers that may be due to disability,
+  including but not limited to ADHD, chronic or temporary medical conditions, deaf or hard of hearing, learning disability, mental health, or vision impairment,
+  please contact the Services for Students with Disabilities (SSD) office (540-231-3788, ssd@vt.edu, or visit <a class="link" href="https://www.ssd.vt.edu/">www.ssd.vt.edu</a>).
+  If you have an SSD accommodation letter, please meet with me privately during office hours (or schedule an appointment) to discuss your accommodations.
+  This meeting should occur during the first two weeks of class.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Honor Code</h3>
+  <p>
+  The Undergraduate Honor Code pledge that each member of the university community agrees to
+  abide by states:
+  “As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or
+  steal, nor will I accept the actions of those who do.”
+  Students enrolled in this course are responsible for abiding by the Honor Code. A student who
+  has doubts about how the Honor Code applies to any assignment is responsible for obtaining
+  specific guidance from the course instructor before submitting the assignment for evaluation.
+  Ignorance of the rules does not exclude any member of the University community from the
+  requirements and expectations of the Honor Code. Academic integrity expectations are the same
+  for online classes as they are for in person classes. All university policies and procedures apply
+  in any Virginia Tech academic environment.
+  For additional information about the Honor Code, please visit: <a class="link" href="https://www.honorsystem.vt.edu/">https://www.honorsystem.vt.edu/</a>
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Academic Misconduct</h3>
+  <p>
+  If you have questions or are unclear about what constitutes academic
+  misconduct on an assignment or exam, please speak with me.
+  The normal sanction I will recommend for a violation of the Honor Code
+  is an F* sanction as your final course grade. The
+  F represents failure in the course, and * identifies a student
+  who has failed to uphold the values of academic integrity at Virginia Tech.
+  </p>
+</div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      &copy; <script>document.write((new Date()).getFullYear());</script> Dylan P. Losey
+    </small>
+  </div>
+</footer>
+
+
+</body>
+</html>
