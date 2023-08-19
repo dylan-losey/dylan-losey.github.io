@@ -1,0 +1,514 @@
+---
+layout: alone
+title: ME 4824 - Introduction to Human-Robot Interaction
+show_title: true
+permalink: /me4824/
+tags: me4824
+---
+
+
+<style>
+  .btn {
+  background-color: #A0D4A4;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px
+  }
+  .btn:hover {
+      background-color: #999;
+  }
+
+  .link {
+  color: #FF9900;
+  text-decoration: none;
+  }
+  .link:hover {
+      color: black;
+      text-decoration: none;
+  }
+  hr {
+      border: none;
+      height: 1px;
+      color: #333;
+      background-color: #333;
+      margin: -5px;
+  }
+  table {
+    border-top: 0px solid #333;
+  }
+  td, th {
+    text-align: left;
+  }
+</style>
+
+<div>
+  <p>Virginia Tech<br />
+  3 Credit Hours<br />
+  </p>
+</div>
+
+<div>
+  <br>
+<img src="{{ site.baseurl }} /images/me5824/front.png" style="width:100%; height:100%; border-radius: 15px">
+</div>
+
+<div>
+  <h3>Description</h3>
+  <p>This course surveys recent literature to formalize human-robot interaction. We explore diverse approaches for algorithmic human-robot interaction, including imitation learning, reinforcement learning, shared autonomy, control, physical interaction, active learning, and communication. Students discuss key papers and conduct a research project.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Prerequisites</h3>
+  <p>ME 4524. Background knowledge of probability and multivariable calculus is expected. Assignments will require programming in Python.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Learning Objectives</h3>
+  Having successfully completed this course, the student will be able to:
+  <ul>
+    <li>Formulate problems in human-robot interaction</li>
+    <li>Describe and implement methods for learning from human data</li>
+    <li>Design interactive algorithms that optimize robot behavior</li>
+    <li>Develop approaches for assistive robots and physical interaction</li>
+    <li>Conduct a research project on human-robot interaction</li>
+  </ul>
+</div>
+
+<hr>
+<div>
+  <h3>Instructor</h3>
+  <table>
+    <tr>
+      <td style="vertical-align:middle; width:25%;">
+		    <center>
+          <img src="{{ site.baseurl }} /images/dylan_head.jpg" style="max-height:200px; border-radius: 15px" />
+        </center>
+  	  </td>
+      <td>
+        <p>Prof. Dylan Losey<br />
+        213D Goodwin Hall<br />
+        losey@vt.edu<br />
+        <a class="link" href="https://dylanlosey.com/">https://dylanlosey.com/</a></p>
+  	  </td>
+    </tr>
+  </table>
+  <h3>Teaching Assistant</h3>
+  <table>
+    <tr>
+      <td>
+        Sean Lee &#60;sean1295@vt.edu&#62;
+      </td>
+    </tr>
+  </table>
+</div>
+
+<hr>
+<div>
+  <h3>Textbooks</h3>
+  <p>This course focuses on readings from recent publications. To review the basics, see: <i>Artificial Intelligence: A Modern Approach</i> by Russell and Norvig, 4th Edition. <a class="link" href="https://drive.google.com/file/d/1IUjVlwH9aq9RIOzz1dS5uat4bwyXX8l1/view?usp=sharing">Download</a>.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Grading</h3>
+  <p>Homework: 50%<br />
+  Midterm: 25%<br />
+  Project: 25%<br />
+</div>
+
+<hr>
+<div>
+  <h3>Schedule</h3>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Lecture</th>
+      <th>Reading</th>
+      <th>Assignment</th>
+    </tr>
+    <tr>
+      <td>Jan. 17</td>
+      <td>Introduction</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 19</td>
+      <td>Building Blocks</td>
+      <td>AIMA Chapter 12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 24</td>
+      <td>Building Blocks</td>
+      <td>AIMA Chapter 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 26</td>
+      <td>Building Blocks</td>
+      <td>AIMA Chapter 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jan. 31</td>
+      <td>Building Blocks</td>
+      <td>AIMA Chapter 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 2</td>
+      <td>Behavior Cloning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/menda_2019.pdf">Link</a></b>.
+        EnsembleDAgger: A Bayesian Approach to Safe Imitation Learning.
+      </td>
+      <td>HW1</td>
+    </tr>
+    <tr>
+      <td>Feb. 7</td>
+      <td>Behavior Cloning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/menda_2019.pdf">Link</a></b>.
+        EnsembleDAgger: A Bayesian Approach to Safe Imitation Learning.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 9</td>
+      <td>Inverse Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/ramachandran_2007.pdf">Link</a></b>.
+        Bayesian Inverse Reinforcement Learning.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 14</td>
+      <td>Inverse Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/ramachandran_2007.pdf">Link</a></b>.
+        Bayesian Inverse Reinforcement Learning.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 16</td>
+      <td>Inverse Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/ramachandran_2007.pdf">Link</a></b>.
+        Bayesian Inverse Reinforcement Learning.
+      </td>
+      <td>HW2</td>
+    </tr>
+    <tr>
+      <td>Feb. 21</td>
+      <td>Shared Autonomy</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/javdani_2017.pdf">Link</a></b>.
+        Shared Autonomy via Hindsight Optimization.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Feb. 23</td>
+      <td>Shared Autonomy</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/javdani_2017.pdf">Link</a></b>.
+        Shared Autonomy via Hindsight Optimization.
+      </td>
+      <td>HW3</td>
+    </tr>
+    <tr>
+      <td>Feb. 28</td>
+      <td>Shared Autonomy</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/javdani_2017.pdf">Link</a></b>.
+        Shared Autonomy via Hindsight Optimization.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 2</td>
+      <td>Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/brown_2019.pdf">Link</a></b>.
+        Extrapolating Beyond Suboptimal Demonstrations.
+      </td>
+      <td>HW4</td>
+    </tr>
+    <tr>
+      <td>March 14</td>
+      <td>Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/brown_2019.pdf">Link</a></b>.
+        Extrapolating Beyond Suboptimal Demonstrations.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 16</td>
+      <td>Reinforcement Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/brown_2019.pdf">Link</a></b>.
+        Extrapolating Beyond Suboptimal Demonstrations.
+      </td>
+      <td>HW5</td>
+    </tr>
+    <tr>
+      <td>March 21</td>
+      <td>Control</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/sadigh_2016.pdf">Link</a></b>.
+        Planning for Autonomous Cars that Affect Humans.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 23</td>
+      <td>Control</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/sadigh_2016.pdf">Link</a></b>.
+        Planning for Autonomous Cars that Affect Humans.
+      </td>
+      <td>Project Proposal</td>
+    </tr>
+    <tr>
+      <td>March 28</td>
+      <td>Control</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/sadigh_2016.pdf">Link</a></b>.
+        Planning for Autonomous Cars that Affect Humans.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>March 30</td>
+      <td>Physical Interaction</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/losey_2021.pdf">Link</a></b>.
+        Learning Objectives from Physical Human-Robot Interaction.
+      </td>
+      <td>HW6</td>
+    </tr>
+    <tr>
+      <td>April 4</td>
+      <td>Physical Interaction</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/losey_2021.pdf">Link</a></b>.
+        Learning Objectives from Physical Human-Robot Interaction.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 6</td>
+      <td><b>Midterm</b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 11</td>
+      <td>Active Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/biyik_2021.pdf">Link</a></b>.
+        Learning from diverse sources of human feedback.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 13</td>
+      <td>Active Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/biyik_2021.pdf">Link</a></b>.
+        Learning from diverse sources of human feedback.
+      </td>
+      <td>HW7</td>
+    </tr>
+    <tr>
+      <td>April 18</td>
+      <td>Active Learning</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/biyik_2021.pdf">Link</a></b>.
+        Learning from diverse sources of human feedback.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 20</td>
+      <td>Communication</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/dragan_2013.pdf">Link</a></b>.
+        Legibility and predictability of robot motion.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 25</td>
+      <td>Communication</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/dragan_2013.pdf">Link</a></b>.
+        Legibility and predictability of robot motion.
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>April 27</td>
+      <td>Communication</td>
+      <td>
+        <b><a class="link" href="{{ site.baseurl }} /pdfs/me5824/dragan_2013.pdf">Link</a></b>.
+        Legibility and predictability of robot motion.
+      </td>
+      <td>HW8 + Bonus</td>
+    </tr>
+    <tr>
+      <td>May 2</td>
+      <td>Guest Lecture: Dr. Andrea Bajcsy</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>May 6</td>
+      <td>Project Presentations</td>
+      <td></td>
+      <td>Final Report</td>
+    </tr>
+  </table>
+</div>
+
+<hr>
+<div>
+  <h3>Office Hours</h3>
+  <p>Fridays, 3:00-4:00pm</p>
+  <p>All students are invited to attend!
+    You don't need to have a particular question &mdash;
+    you’re welcome to stop by and participate in the conversation.
+    I also encourage students to use the <i>Discussion</i> feature on Canvas,
+    which I regularly check to answer questions.
+    I will not respond to emails requesting help on a specific homework problem.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Assignments</h3>
+  <p>There are 8 total assignments, each of which is worth 6.25% of your final grade. There is also one optional bonus assignment which, if completed, will replace your lowest HW grade.
+  Homework is due on Saturday by midnight.
+  Late assignments are not accepted, except when the student has an illness, emergency, or other pressing issue.
+  If you need to ask for an extension due to one of these reasons do not hesitate to contact me.
+  However, you must make your request before the homework deadline.</p>
+</div>
+
+<hr>
+<div>
+  <h3>Exams</h3>
+  <p>The course has a midterm exam that will be conducted remotely.
+    Students will access the exam on Canvas and have a pre-specified amount of time to submit their solutions. The exam is open book, but students may not work with others when completing the exam.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Project</h3>
+  <p>Students will perform a research project individually or in teams.
+    Students in ME 4824 may form teams of up to four students.
+    Students in ME 5824 or CS 5844 may form teams of up to two students.
+    The objective is of the project is to
+    i) dive into a concept from lecture and
+    ii) apply that concept to a problem you are interested in.
+    The project has three stages:
+  </p>
+  <p>
+    <b>Project Proposal (not graded)</b>: 1 page + references.
+    Your report should clearly explain the problem you are going to solve, how this problem is addressed by related papers, and your proposed solution.
+    Include the concept(s) from lecture that you will be exploring.
+    I will provide feedback and suggestions on these reports to guide your next steps.
+  </p>
+  <p>
+    <b>Project Presentation (10%)</b>:
+    Present your findings in a 10 minute recorded talk.
+    Your talk should summarize your work: explain the problem, related papers, and your method.
+    Include demos of your working solution. All team members are expected to participate in the presentation.
+    The recorded talks will be played during the time of our final exam, and students will answer questions after their video plays.
+  </p>
+  <p>
+    <b>Final Report (15%)</b>: 6 pages + references.
+    Divide your report into the following sections:
+    Problem Statement, Related Work, Methods, Experiments, Conclusion, and References.
+    Include figures (and supplementary videos) to visualize your method and results.
+    You will be graded on both the technical content of your report and the clarity of your writing.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Teamwork</h3>
+  <p><b>Assignments.</b> Group discussion and collaborative work is encouraged on the homework.
+  However, you must submit your own assignment.</p>
+  <p><b>Exam.</b> Students are not allowed to collaborate during the exam.</p>
+  <p><b>Project.</b> Students are invited to complete the project in teams.
+  If you are having an issue within your team, you should first meet with your team and attempt to resolve the problem. If the issue persists, please notify me and we can look for an appropriate solution.</p>
+  <p>All submitted materials are considered graded work and are subject to the Honor Code.</p>
+</div>
+
+
+<hr>
+<div>
+  <h3>Services for Students with Disabilities</h3>
+  <p>
+  Every student in this course should have an equal opportunity to succeed.
+  If you anticipate or experience academic barriers that may be due to disability,
+  including but not limited to ADHD, chronic or temporary medical conditions, deaf or hard of hearing, learning disability, mental health, or vision impairment,
+  please contact the Services for Students with Disabilities (SSD) office (540-231-3788, ssd@vt.edu, or visit <a class="link" href="https://www.ssd.vt.edu/">www.ssd.vt.edu</a>).
+  If you have an SSD accommodation letter, please email me as soon as possible so that I can accommodate your needs.
+  I am happy to discuss your accommodations in a private meeting during office hours (or by appointment).
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Honor Code</h3>
+  <p>
+  The Undergraduate Honor Code pledge that each member of the university community agrees to
+  abide by states:</p>
+  <p><i>“As a Hokie, I will conduct myself with honor and integrity at all times. I will not lie, cheat, or
+  steal, nor will I accept the actions of those who do.”</i></p>
+  <p>Students enrolled in this course are responsible for abiding by the Honor Code. A student who
+  has doubts about how the Honor Code applies to any assignment is responsible for obtaining
+  specific guidance from the course instructor before submitting the assignment for evaluation.
+  Ignorance of the rules does not exclude any member of the University community from the
+  requirements and expectations of the Honor Code. Academic integrity expectations are the same
+  for online classes as they are for in person classes. All university policies and procedures apply
+  in any Virginia Tech academic environment.
+  For additional information about the Honor Code, please visit: <a class="link" href="https://www.honorsystem.vt.edu/">https://www.honorsystem.vt.edu/</a>
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Honor Code Pledge</h3>
+  <p>The Virginia Tech honor code pledge for assignments is as follows:</p>
+  <p><i>``I have neither given nor received unauthorized assistance on this assignment.''</i></p>
+  <p>
+    The pledge is to be written out on all graded assignments at the university and signed by the student.
+    The honor pledge represents both an expression of the student's support of the honor code and a commitment to uphold the academic standards at Virginia Tech.
+  </p>
+</div>
+
+<hr>
+<div>
+  <h3>Academic Misconduct</h3>
+  <p>
+  If you have questions or are unclear about what constitutes academic
+  misconduct on an assignment or exam, please speak with me.
+  The normal sanction I will recommend for a violation of the Honor Code
+  is an F* sanction as your final course grade. The
+  F represents failure in the course, and * identifies a student
+  who has failed to uphold the values of academic integrity at Virginia Tech.
+  </p>
+</div>
