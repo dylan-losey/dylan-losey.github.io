@@ -6,8 +6,8 @@ baseurl: ""
 url: "https://dylanlosey.com/"
 date_format: "%b %-d, %Y"
 header_pages:
+ - lab.html  
  - publications.html
- - talks.html
  - teaching.html
  - CV.html
  - contact.html
