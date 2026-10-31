@@ -1,23 +1,16 @@
-{% assign default_paths = site.pages | map: "path" %}
-{% assign page_paths = site.header_pages | default: default_paths %}
-
-{% for path in page_paths %}
-
-    {% assign item = site.pages | where: "path", path | first %}
-
-    {% if item.hyperlink %}
-      {% if item.title and page.title == item.title %}
-          <a class="nav-active" href="{{ item.hyperlink }}">{{ item.title }}</a>
-      {% elsif item.title %}
-          <a class="nav-link" href="{{ item.hyperlink }}">{{ item.title }}</a>
-      {% endif %}
-    {% else %}
-      {% if item.title and page.title == item.title %}
-          <a class="nav-active" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% elsif item.title %}
-          <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endif %}
-    {% endif %}
-
-
+{%- comment -%}
+Navigation is driven by `header_pages` in _config.yml. A page whose front
+matter sets `redirect_to` links straight to that target (Lab, Publications, CV);
+other pages link to their own URL.
+{%- endcomment -%}
+{% for path in site.header_pages %}
+  {%- assign item = site.pages | where: "path", path | first -%}
+  {%- if item.title -%}
+    {%- assign target = item.redirect_to | default: item.url | relative_url -%}
+    {%- if page.title == item.title %}
+          <a class="nav-active" href="{{ target }}">{{ item.title }}</a>
+    {%- else %}
+          <a class="nav-link" href="{{ target }}">{{ item.title }}</a>
+    {%- endif -%}
+  {%- endif -%}
 {% endfor %}

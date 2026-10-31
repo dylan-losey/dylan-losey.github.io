@@ -1,0 +1,14 @@
+// Inline SVG icons (replaces the Font Awesome web font). Each icon is drawn
+// in Font Awesome 4.7's own coordinate system, so sizes and alignment match
+// the glyphs the site rendered before: 1em tall, with the glyph box extending
+// 256/1792 em below the baseline.
+.fa {
+  display: inline-block;
+  line-height: 0;
+}
+
+.fa-svg {
+  display: inline-block;
+  vertical-align: -0.1429em;
+  fill: currentColor;
+}

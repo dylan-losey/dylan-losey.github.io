@@ -1,12 +1,12 @@
 # Site settings
 title: Dylan Losey
 author: Dylan Losey
-description: "Dylan Losey"
+description: "Dylan Losey is an Associate Professor of Mechanical Engineering at Virginia Tech who develops learning and control algorithms for robots that collaborate with people."
 baseurl: ""
-url: "https://dylanlosey.com/"
+url: "https://dylanlosey.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - lab.html  
+ - lab.html
  - publications.html
  - teaching.html
  - CV.html
@@ -16,12 +16,24 @@ show_social_icons: true
 email: losey@vt.edu
 youtube_id: UCVUHS9JE0tSakziQFkThhVQ
 
+# Used for structured data (JSON-LD) and link previews
+scholar_url: "https://scholar.google.com/citations?user=hkmh2uoAAAAJ"
+lab_name: "Collaborative Robotics Lab"
+lab_url: "https://collab.me.vt.edu/"
+og_image: "/images/dylan_head.jpg"
+og_image_width: 1199
+og_image_height: 1200
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - .bundle
