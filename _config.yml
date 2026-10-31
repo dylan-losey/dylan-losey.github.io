@@ -17,9 +17,27 @@ email: losey@vt.edu
 youtube_id: UCVUHS9JE0tSakziQFkThhVQ
 
 # Used for structured data (JSON-LD) and link previews
-scholar_url: "https://scholar.google.com/citations?user=hkmh2uoAAAAJ"
+job_titles:
+  - "Associate Professor of Mechanical Engineering"
+  - "John R. Jones III Faculty Fellow"
 lab_name: "Collaborative Robotics Lab"
 lab_url: "https://collab.me.vt.edu/"
+orcid: "0000-0002-8787-5293"
+# Public profiles that refer to the same person (JSON-LD sameAs). Keep in sync with the profiles themselves.
+profile_urls:
+  - "https://me.vt.edu/people/faculty/losey-dylan.html"
+  - "https://scholar.google.com/citations?user=hkmh2uoAAAAJ"
+  - "https://orcid.org/0000-0002-8787-5293"
+  - "https://www.semanticscholar.org/author/2426559"
+  - "https://www.linkedin.com/in/dylan-losey-2260973b5/"
+  - "https://github.com/dylan-losey"
+  - "https://youtube.com/channel/UCVUHS9JE0tSakziQFkThhVQ"
+  - "https://collab.me.vt.edu/"
+
+# Search engine verification tokens. Paste the value from Google Search Console
+# ("HTML tag" method) and Bing Webmaster Tools ("Meta tag" method) here.
+google_verification: ""
+bing_verification: ""
 og_image: "/images/dylan_head.jpg"
 og_image_width: 1199
 og_image_height: 1200
@@ -30,6 +48,17 @@ permalink: pretty
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+# Keep course-evaluation PDFs and image files out of the sitemap (robots.txt also disallows /pdfs/).
+defaults:
+  - scope:
+      path: "pdfs"
+    values:
+      sitemap: false
+  - scope:
+      path: "images"
+    values:
+      sitemap: false
+
 exclude:
   - Gemfile
   - Gemfile.lock

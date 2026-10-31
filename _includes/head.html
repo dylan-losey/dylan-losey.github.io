@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
+    <title>{% if page.seo_title %}{{ page.seo_title | strip_html }}{% elsif page.title %}{{ page.title | strip_html }} &#8211; {{ site.title | strip_html }}{% else %}{{ site.title | strip_html }}{% endif %}</title>
     {%- assign description = page.meta_description | default: site.description %}
     {%- assign page_title = page.title | default: site.title %}
     <meta name="description" content="{{ description | xml_escape }}">
@@ -45,25 +45,39 @@
     <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">
     {%- endif %}
 
-    <!-- Structured data -->
+    <!-- Structured data: who this site is about. Profile URLs and titles live in _config.yml. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "@id": "{{ '/' | absolute_url }}#person",
       "name": "Dylan P. Losey",
+      "alternateName": ["Dylan Losey", "Dylan Patrick Losey"],
       "givenName": "Dylan",
       "familyName": "Losey",
+      "honorificPrefix": "Dr.",
       "url": "{{ '/' | absolute_url }}",
       {%- if site.og_image %}
       "image": "{{ site.og_image | absolute_url }}",
       {%- endif %}
       "email": "mailto:{{ site.email }}",
-      "jobTitle": "Associate Professor of Mechanical Engineering",
+      "jobTitle": {{ site.job_titles | jsonify }},
+      {%- if site.orcid %}
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "{{ site.orcid }}"
+      },
+      {%- endif %}
       "worksFor": {
         "@type": "CollegeOrUniversity",
         "name": "Virginia Tech",
-        "url": "https://vt.edu/"
+        "url": "https://vt.edu/",
+        "department": {
+          "@type": "Organization",
+          "name": "Department of Mechanical Engineering",
+          "url": "https://me.vt.edu/"
+        }
       },
       "affiliation": {
         "@type": "ResearchOrganization",
@@ -74,12 +88,8 @@
         { "@type": "CollegeOrUniversity", "name": "Rice University" },
         { "@type": "CollegeOrUniversity", "name": "Vanderbilt University" }
       ],
-      "knowsAbout": ["human-robot interaction", "robot learning", "control theory", "collaborative robotics"],
-      "sameAs": [
-        "{{ site.scholar_url }}",
-        "https://youtube.com/channel/{{ site.youtube_id }}",
-        "{{ site.lab_url }}"
-      ]
+      "knowsAbout": ["human-robot interaction", "robot learning", "control theory", "collaborative robotics", "assistive robotics"],
+      "sameAs": {{ site.profile_urls | jsonify }}
     }
     </script>
 

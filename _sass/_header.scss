@@ -55,3 +55,12 @@
 .site-header .site-nav {
   text-align: center;
 }
+
+// The logo is the page's h1 for search engines and screen readers. Rendered
+// inline with inherited font metrics so it lays out exactly as the bare link did.
+.site-header .site-logo {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
