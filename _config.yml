@@ -36,7 +36,7 @@ profile_urls:
 
 # Search engine verification tokens. Paste the value from Google Search Console
 # ("HTML tag" method) and Bing Webmaster Tools ("Meta tag" method) here.
-google_verification: ""
+google_verification: "UdVlSpVSMBmLxRpInrRpCF3Zd6iKb5Y-cQo0fJOx_ls"
 bing_verification: ""
 og_image: "/images/dylan_head.jpg"
 og_image_width: 1199
