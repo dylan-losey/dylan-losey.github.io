@@ -3,6 +3,12 @@
     {% if site.email %}
       <a class="fa" href="mailto:{{ site.email }}" aria-label="Email {{ site.author }}">{% include icons/envelope.svg %}</a>
     {% endif %}
+    {% if site.google_scholar_id %}
+      <a class="fa" href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" aria-label="Google Scholar profile">{% include icons/graduation-cap.svg %}</a>
+    {% endif %}
+    {% if site.linkedin_id %}
+      <a class="fa" href="https://www.linkedin.com/in/{{ site.linkedin_id }}/" aria-label="LinkedIn profile">{% include icons/linkedin.svg %}</a>
+    {% endif %}
     {% if site.youtube_id %}
       <a class="fa" href="https://youtube.com/channel/{{ site.youtube_id }}" aria-label="YouTube channel">{% include icons/youtube-play.svg %}</a>
     {% endif %}
